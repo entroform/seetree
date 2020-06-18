@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+  "name": "seetree",
+  "version": "0.1",
+  "description": "Maps the DOM tree by their node, id, and class names.",
+  "icons": {
+    "48": "icons/seetree-48.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*/*"],
+      "js": ["seetree.js"]
+    }
+  ],
+  "devtools_page": "devtool.html",
+  "background": {
+    "scripts": ["background.js"]
+  }
+}
